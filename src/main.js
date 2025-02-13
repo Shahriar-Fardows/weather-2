@@ -45,14 +45,14 @@ function updateWeatherUI(data) {
 
   const weatherCondition = data.weather[0].main.toLowerCase();
   const weatherImages = {
-    clouds: "./public/images/clouds.png",
-    clear: "./public/images/clear.png",
-    rain: "./public/images/rain.png",
-    drizzle: "./public/images/drizzle.png",
-    mist: "./public/images/mist.png",
+    clouds: "/images/clouds.png",
+    clear: "/images/clear.png",
+    rain: "/images/rain.png",
+    drizzle: "/images/drizzle.png",
+    mist: "/images/mist.png",
   };
 
-  weatherIcon.src = weatherImages[weatherCondition] || "./public/images/clear.png";
+  weatherIcon.src = weatherImages[weatherCondition] || "/images/clear.png";
 }
 
 // Function to get the user's location
